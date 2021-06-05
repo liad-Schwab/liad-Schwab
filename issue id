@@ -1,0 +1,3 @@
+[{'id': '11', 'name': 'To Do', 'to':
+{'id': '21', 'name': 'In Progress''True,
+{'id': '31', 'name': 'Done', sGlobal': True, 'isInitial': False, 'isAvailable': True, 'isConditional': False, 'isLooped': False}]

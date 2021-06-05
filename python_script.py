@@ -1,12 +1,12 @@
 import random
 import json
 from jira import JIRA
-from flask import Flask, request, Response, render_template, jsonify
+import request, Response, jsonify
 
 
 app = Flask(__name__)
 
-
+#Consider flow control Flask 
 @app.route('/webhook', methods=['POST'])
 def respond():
     #print (request.json)

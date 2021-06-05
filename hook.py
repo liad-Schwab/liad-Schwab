@@ -27,8 +27,20 @@ jira.add_comment(issue, "Its thursday lets go home")
 #print(transitions)
 #jira.transition_issue(issue, 11,21)
 
+def get_transition(issue_key):
+    jira_server = {'server': config.jira_server}
+    jira = JIRA(options=jira_server, basic_auth=(config.jira_user, config.jira_pass))
+    issue = jira.issue(issue_key)
+    transitions = jira.transitions(issue)
+    for t in transitions:
+        if t['name'] == config.jira_transition:
+            return t['id']
 
 
+def close_issue(issue, status):
+    jira_server = {'server': config.jira_server}
+    jira = JIRA(options=jira_server, basic_auth=(config.jira_user, config.jira_pass))
+    jira.transition_issue(issue, status)
 
 
 
