@@ -22,9 +22,9 @@ summary = issue.fields.summary
 print('ticket: ', ticket, summary)
 change_issue_status = jira.transition_issue(issue, 11)
 jira.add_comment(issue, "Its thursday lets go home")
-#transitions = jira.transitions(issue)
+transitions = jira.transitions(issue)
 #jira.transitions(issue)
-#print(transitions)
+print(transitions)
 #jira.transition_issue(issue, 11,21)
 
 def get_transition(issue_key):
@@ -37,10 +37,6 @@ def get_transition(issue_key):
             return t['id']
 
 
-def close_issue(issue, status):
-    jira_server = {'server': config.jira_server}
-    jira = JIRA(options=jira_server, basic_auth=(config.jira_user, config.jira_pass))
-    jira.transition_issue(issue, status)
 
 
 

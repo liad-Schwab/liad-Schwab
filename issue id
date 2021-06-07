@@ -1,3 +1,11 @@
 [{'id': '11', 'name': 'To Do', 'to':
 {'id': '21', 'name': 'In Progress''True,
-{'id': '31', 'name': 'Done', sGlobal': True, 'isInitial': False, 'isAvailable': True, 'isConditional': False, 'isLooped': False}]
+{'id': '31', 'name': 'Done',
+{'id': '11', 'name': 'To Do',
+'name': 'PENDING STAGING', 'id': '10463',
+ 'id': '51', 'name': 'PENDING VERIFICATION',
+'PENDING VERIFICATION', 'id': '10464',
+ 'id': '61', 'name': 'PENDING PRODUCTION',
+ 'name': 'PENDING PRODUCTION', 'id': '10465',
+ {'id': '71', 'name': 'CFIR', 'to':  'id': '10466', yellow', 'name': 'In Progress'}
+

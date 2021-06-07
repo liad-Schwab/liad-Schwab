@@ -38,6 +38,6 @@ summary = issue.fields.summary
 print('ticket: ', ticket, summary)
 #jira.add_comment(issue, "iron DOM rools")
 #transitions = jira.transitions(issue)
-#jira.transitions(issue)
-#print(transitions)
+jira.transitions(issue)
+print(transitions)
 #jira.transition_issue(issue, 11,21)
